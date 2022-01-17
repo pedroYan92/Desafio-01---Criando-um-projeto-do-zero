@@ -46,7 +46,7 @@
     margin: 0;
     list-style: none;
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 
     & li {
       margin: 0;
@@ -60,5 +60,32 @@
         margin-left: 1.625rem;
       }
     }
+  }
+  .editInformation {
+    display: none;
+  }
+}
+.linksPosts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  a {
+    width: 50%;
+    > span {
+      font-size: 1.125rem;
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    > div {
+      font-size: 1.125rem;
+      color: var(--highlight);
+      transition: all 0.3s ease-in-out;
+      margin-top: 0.5rem;
+    }
+  }
+  .alignRight {
+    text-align: right;
   }
 }

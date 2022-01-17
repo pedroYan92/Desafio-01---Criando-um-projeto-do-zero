@@ -13,6 +13,7 @@ import styles from './post.module.scss';
 import { useRouter } from 'next/router';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import Comments from '../../components/Comments';
 
 interface Post {
   first_publication_date: string | null;
@@ -167,6 +168,8 @@ export default function Post({
             </Link>
           )}
         </section>
+
+        <Comments />
 
         {preview && (
           <aside>
